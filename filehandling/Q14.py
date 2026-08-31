@@ -1,0 +1,20 @@
+# 14. Replace a word
+
+old_word = input("Enter word to replace: ")
+new_word = input("Enter new word: ")
+
+file = open("student.txt", "r")
+
+content = file.read()
+
+content = content.replace(old_word, new_word)
+
+file.close()
+
+file = open("student.txt", "w")
+
+file.write(content)
+
+file.close()
+
+print("Word replaced successfully.")

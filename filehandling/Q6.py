@@ -1,0 +1,11 @@
+# 6. Count number of words
+
+file = open("student.txt", "r")
+
+content = file.read()
+
+words = content.split()
+
+print("Total number of words:", len(words))
+
+file.close()
